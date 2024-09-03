@@ -45,16 +45,28 @@
             padding-left: 20px;
         }
 
-        /* Iframe Styles */
+        /* Iframe and Button Styles */
+        #iframeContainer {
+            position: fixed;
+            bottom: 80px; /* Positioned above the button */
+            right: 20px;
+            width: 300px; /* Adjust width as needed */
+            height: 400px; /* Adjust height as needed */
+            display: none; /* Initially hidden */
+            z-index: 1000; /* Ensures it is above other content */
+        }
+
         #iframeContainer iframe {
             width: 100%;
-            height: 400px;
+            height: 100%;
             border: 1px solid #ccc;
             border-radius: 5px;
         }
 
-        /* Button Styles */
         #buttonContainer {
+            position: fixed;
+            bottom: 20px; /* Position at the bottom of the page */
+            right: 20px;
             text-align: center;
         }
 
@@ -121,33 +133,33 @@
     <!-- Short Story 1 -->
     <div id="shortStory1">
         <h2>Short Story: The Mysterious Forest</h2>
-        <p>Once upon a time, in a small village surrounded by a dense forest, there lived a young girl named Elara. Every day, she would hear tales of the mysterious creatures that lived in the forest, creatures that were said to grant wishes to those who were brave enough to find them. One day, driven by curiosity and a sense of adventure, Elara decided to venture into the forest. As she walked deeper into the woods, she noticed the trees whispering secrets to each other and the shadows dancing on the forest floor. Suddenly, she stumbled upon a clearing, where she saw a group of glowing orbs floating in the air. As Elara approached them, they transformed into beautiful, ethereal beings. They smiled at her and said, 'We have been waiting for you, Elara. Make a wish, and we will grant it.' Elara thought for a moment and then wished for happiness and peace for her village. The beings nodded, and in an instant, Elara found herself back at the edge of the forest. When she returned to her village, she found that her wish had come true. The villagers were happier than ever, and the village prospered for many years to come.</p>
+        <p>Once upon a time, in a small village surrounded by a dense forest, there lived a young girl named Elara...</p>
     </div>
 
     <!-- Short Story 2 -->
     <div id="shortStory2">
         <h2>Short Story: The Time Traveler's Dilemma</h2>
-        <p>Dr. James Parker was a brilliant scientist, known for his groundbreaking research in time travel. After years of work, he had finally built a time machine. With excitement and a hint of fear, he decided to test his invention. Dr. Parker set the date to 100 years in the future and pressed the activation button. In a flash, he found himself in a futuristic city, surrounded by towering skyscrapers and flying cars. People wore advanced gadgets and spoke in a language that was a mix of familiar and alien words. As he explored this new world, Dr. Parker realized that the future was not as perfect as he had imagined. Technology had advanced, but humanity had become isolated, with people preferring virtual interactions over real human connections. Feeling a deep sense of loss, Dr. Parker decided to return to his own time, vowing to use his invention to ensure that the future would be a place where technology and humanity could coexist harmoniously. As he stepped back into his time machine, he knew that his work had only just begun.</p>
+        <p>Dr. James Parker was a brilliant scientist, known for his groundbreaking research in time travel...</p>
     </div>
 
     <!-- Existing Iframe -->
-    <!-- <div id="iframeContainer">
+    <div id="iframeContainer">
         <iframe
             id="myIframe"
-            src="https://testforbot.rocket.chat/channel/Room10/?layout=embedded"
+            src=""
             title="Rocket.Chat Iframe"
             frameborder="0"
         ></iframe>
-    </div> -->
+    </div>
 
     <!-- Buttons to Control Iframe -->
-    <!-- <div id="buttonContainer">
+    <div id="buttonContainer">
         <button id="openIframe">Open Chat</button>
         <button id="closeIframe" style="display: none;">Close Chat</button>
-    </div> -->
+    </div>
 
     <!-- Cookie Display -->
-    <!-- <div id="cookieDisplay"></div> -->
+    <div id="cookieDisplay"></div>
 
     <!-- Random Quote Section -->
     <div id="randomQuote">

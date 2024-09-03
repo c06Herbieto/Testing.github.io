@@ -37,6 +37,7 @@
             margin: 20px auto;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             border-radius: 5px;
+            overflow: hidden; /* Ensures content doesn't overflow */
         }
 
         /* List Styles */
@@ -92,6 +93,20 @@
             border-left: 4px solid #4CAF50;
             padding-left: 15px;
             margin-left: 0;
+        }
+
+        /* Short Story Styles */
+        #shortStory1, #shortStory2 {
+            line-height: 1.6; /* Improved readability */
+            color: #333;
+            background-color: #f9f9f9; /* Light background for differentiation */
+            border-left: 4px solid #4CAF50; /* Accent border */
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        #shortStory1 p, #shortStory2 p {
+            margin: 10px 0; /* Space between paragraphs */
         }
     </style>
 </head>
